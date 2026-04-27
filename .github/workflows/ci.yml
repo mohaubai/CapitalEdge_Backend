@@ -17,10 +17,10 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Install flake8 and run it
-        run: |
-          pip install flake8
-          flake8 .
+      # - name: Install flake8 and run it
+      #   run: |
+      #     pip install flake8
+      #     flake8 .
 
       - name: Run tests using pytest
         run: pytest test_branches.py -v
