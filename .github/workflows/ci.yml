@@ -25,4 +25,4 @@ jobs:
       #     flake8 .
 
       - name: Run tests using pytest
-        run: pytest test_branches.py -v
+        run: pytest -v
