@@ -20,3 +20,9 @@ class CustomerSummary(BaseModel):
     account_count: int
     account_balance: float
     total_transactions: float
+
+class TransfersAmount(BaseModel):
+    from_account_id: int
+    to_account_id: int
+    amount: float
+    idempotency_key: str
